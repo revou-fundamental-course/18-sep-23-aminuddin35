@@ -1,0 +1,40 @@
+body {
+  padding: 0 25px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.nav {
+  display: flex;
+}
+
+.page-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-item {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover {
+  background: rgb(225, 225, 225);
+}
+
+.content-title {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
