@@ -31,10 +31,132 @@ body {
   background: rgb(225, 225, 225);
 }
 
+.content {
+  display: flex;
+}
+
 .content-title {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content-left {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.content-image {
+  box-sizing: border-box;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+}
+
+.content-image img {
+  height: 250px;
+}
+
+.content-provid-user {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.content-provid-user img {
+  border-radius: 50%;
+  background: rgb(228, 228, 228);
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.user-name{
+  font-weight: bold;
+}
+
+.user-info{
+  font-style: italic;
+  color: grey;
+  font-size: small;
+}
+
+.content-informations{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-informations p{
+  font-weight: bold;
+}
+
+.content-benefit{
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.circle-number{
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  background: rgb(228, 228, 228);
+  margin-right: 20px;
+}
+
+.content-right {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-form {
+  width: 15em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: lightgray;
+}
+
+.content-form p{
+  color: grey;
+  margin-bottom: 50px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 8px 2px;
+}
+
+select {
+  padding: 8px 2px;
+}
+
+option:first-of-type {
+  color: rgb(158, 158, 158);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background: rgb(117, 117, 187);
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: darkblue;);
 }
