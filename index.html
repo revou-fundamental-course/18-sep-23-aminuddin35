@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Grocery | aminuddin35</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="navigation">
       <div class="page-title">E-Grocery</div>
       <div class="nav">
-        <a href="#navigation" class="nav-item">Home</a>
-        <a href="/" class="nav-item">Our Package</a>
-        <a href="/" class="nav-item">Call Us</a>
+        <a href="#content-image" class="nav-item">Home</a>
+        <a href="#our-pakage" class="nav-item">Our Package</a>
+        <a href="#call-action" class="nav-item">Call Us</a>
       </div>
     </header>
     <main>
@@ -28,8 +27,12 @@
       <div id="content" class="content">
         <div id="content-left" class="content-left">
           <div id="content-image" class="content-image">
-            <img src="asset/placeholder-image.png" alt="slider" />
-            <span>Fresh Everyday</span>
+            <img src="asset/banner-1.jpg" class="auto-slide fade" />
+            <img src="asset/banner-2.jpg" class="auto-slide fade" />
+            <img src="asset/banner-3.jpg" class="auto-slide fade" />
+            <img src="asset/banner-4.jpg" class="auto-slide fade" />
+            <img src="asset/banner-5.jpg" class="auto-slide fade" />
+            <span>" Fresh Everyday "</span>
           </div>
           <div class="content-provid-user">
             <img src="asset/placeholder-account.png" alt="avatar" />
@@ -65,35 +68,107 @@
           </div>
         </div>
         <div id="content-right" class="content-right">
-          <form class="content-form" action="/">
+          <form id="form-1" class="content-form" onsubmit="validate()">
             <span>
               <h2>Contact Us</h2>
               <p>
                 Sales akan menghubungi anda 1x24 jam setelah data kami terima
               </p>
             </span>
+            <div id="warning" class="warning"></div>
             <label for="your-name">Your Name</label>
             <input
               type="text"
               name="your-name"
+              id="your-name"
               placeholder="First and last name" />
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" placeholder="address@gmail.com" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="address@gmail.com" />
 
             <label for="interest">What are you interested in?</label>
-            <select type="select" name="interest">
+            <select type="select" name="interest" id="interest">
               <option value="" disabled selected>Select option</option>
-              <option value="/">Football</option>
-              <option value="/">Badminton</option>
+              <option value="1">Banana</option>
+              <option value="2">papaya</option>
             </select>
 
-            <div id="button" class="button">SEND</div>
+            <button type="submit" class="button">SEND</button>
           </form>
         </div>
       </div>
-      <div id="product"></div>
+      <div id="our-pakage">
+        <div class="pakage-heading">
+          <h2>Our Pakage</h2>
+        </div>
+        <div class="pakage">
+          <div class="pakage-list">
+            <img src="asset/icons8-idea-40.png" alt="Fresh Vegetable" /><span
+              ><div>Fresh Vegetable</div>
+              <p>
+                Sayuran segar langsung dari sumber pertanian yang baik
+              </p></span
+            >
+          </div>
+          <div class="pakage-list">
+            <img src="asset/icons8-idea-40.png" alt="Fresh Fruit" /><span
+              ><div>Fresh Fruit</div>
+              <p>
+                Buah dengan kualitas terbaik dari lokal atau import dan harga
+                yang menarik
+              </p></span
+            >
+          </div>
+          <div class="pakage-list">
+            <img src="asset/icons8-idea-40.png" alt="Instant Delivery" /><span
+              ><div>Instant Delivery</div>
+              <p>
+                Di kirim instant oleh kurur yang telah di training dengan SOP
+                untuk menjaga kondisi belanja kamu
+              </p></span
+            >
+          </div>
+        </div>
+        <div class="pakage">
+          <div class="pakage-list">
+            <img src="asset/icons8-star-48.png" alt="Kitchen Ingredient" /><span
+              ><div>Kitchen Ingredient</div>
+              <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p></span
+            >
+          </div>
+          <div class="pakage-list">
+            <img src="asset/icons8-star-48.png" alt="Kitchen Set" /><span
+              ><div>Kitchen Set</div>
+              <p>Segala jenis alat masak untuk membantu kamu memasak</p></span
+            >
+          </div>
+          <div class="pakage-list">
+            <img src="asset/icons8-star-48.png" alt="Bundling Set" /><span
+              ><div>Bundling Set</div>
+              <p>
+                Bingung masak apa? sudah tersedia paket untuk kamu masak di
+                dapur mu
+              </p></span
+            >
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="closing" class="closing">
+        <h2>Your Closing Argument Headline</h2>
+        <p>
+          Suspendise egestas rhoncus urna in bibendum. Donec urna neque, euismod
+          sed justo quis, convallis tincidunt risus.Phasellus fringilla osio vel
+          erat fringilla.
+        </p>
+      </div>
+      <div id="call-action" class="button action">CALL TO ACTION</div>
+    </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>
