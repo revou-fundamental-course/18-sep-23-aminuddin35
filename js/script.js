@@ -78,7 +78,8 @@ function validate() {
     tips.classList.add("success");
     setTimeout(function () {
       tips.classList.remove("success");
+      tips.innerText = "";
     }, 5000);
   }
-  return valid;
+  return false;
 }
